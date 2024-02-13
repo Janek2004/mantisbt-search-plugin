@@ -5,7 +5,7 @@ class SearchPlugin extends MantisPlugin
     function register()
     {
         $this->name = 'Search Plugin';
-        $this->description = 'A simple plugin to search through reports.';
+        $this->description = 'A simple plugin to search through the reports.';
         $this->page = 'search_page.php';
 
         $this->version = '1.0.0';
@@ -19,8 +19,6 @@ class SearchPlugin extends MantisPlugin
     function events()
     {
         return array(
-            'EVENT_EXAMPLE_FOO' => EVENT_TYPE_EXECUTE,
-            'EVENT_EXAMPLE_BAR' => EVENT_TYPE_CHAIN,
             'EVENT_SEARCH_GETBUGS' => EVENT_TYPE_CHAIN,
         );
     }
@@ -29,9 +27,6 @@ class SearchPlugin extends MantisPlugin
     {
         return array(
             'EVENT_MENU_MAIN' => 'menu',
-
-            'EVENT_EXAMPLE_FOO' => 'foo',
-            'EVENT_EXAMPLE_BAR' => 'bar',
             'EVENT_SEARCH_GETBUGS' => 'get_bugs'
         );
     }

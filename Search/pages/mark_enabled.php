@@ -11,10 +11,10 @@ if (isset($_POST['id']) && isset($_POST['action'])) {
 
     $res = db_query($query, array($enabled));
 
-    print_r($res);
+    //print_r($res);
 
     $url = plugin_page('search_page');
-    echo $url;
+    //echo $url;
 
     header('Location: ' . $url);
 

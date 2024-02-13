@@ -52,7 +52,8 @@ function make_status_button($enabled, $bug_id)
 
 	foreach ($s_bugs as $bug) {
 
-		// TODO: Find a better way to get this link
+		// FIXME: Find a better way to get this link
+	
 		$href = "/praca/view.php?id=" . $bug['id'];
 
 		//$table_class = $bug['status'] != 80 ? 'table-danger' : 'table-success';
